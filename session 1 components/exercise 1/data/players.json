@@ -1,0 +1,116 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "firstName": "Toby",
+      "lastName": "Alderweireld",
+      "birthYear": "1989",
+      "image": "players/player_alderweireld.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Nacer",
+      "lastName": "Chadli",
+      "birthYear": "1989",
+      "image": "players/player_chadli.png"
+    },
+    {
+      "id": 3,
+      "firstName": "Kevin",
+      "lastName": "De Bruyne",
+      "birthYear": "1991",
+      "image": "players/player_de_bruyne.png"
+    },
+    {
+      "id": 4,
+      "firstName": "Marouane",
+      "lastName": "Fellaini",
+      "birthYear": "1987",
+      "image": "players/player_fellaini.png"
+    },
+    {
+      "id": 5,
+      "firstName": "Eden",
+      "lastName": "Hazard",
+      "birthYear": "1991",
+      "image": "players/player_hazard.png"
+    },
+    {
+      "id": 6,
+      "firstName": "Vincent",
+      "lastName": "Kompany",
+      "birthYear": "1986",
+      "image": "players/player_kompany.png"
+    },
+    {
+      "id": 7,
+      "firstName": "Romelu",
+      "lastName": "Lukaku",
+      "birthYear": "1993",
+      "image": "players/player_lukaku.png"
+    },
+    {
+      "id": 8,
+      "firstName": "Thomas",
+      "lastName": "Vermaelen",
+      "birthYear": "1985",
+      "image": "players/player_vermaelen.png"
+    },
+    {
+      "id": 9,
+      "firstName": "Dries",
+      "lastName": "Mertens",
+      "birthYear": "1987",
+      "image": "players/player_mertens.png"
+    },
+    {
+      "id": 10,
+      "firstName": "Christian",
+      "lastName": "Benteke",
+      "birthYear": "1990",
+      "image": "players/player_benteke.png"
+    },
+    {
+      "id": 11,
+      "firstName": "Axel",
+      "lastName": "Witsel",
+      "birthYear": "1989",
+      "image": "players/player_witsel.png"
+    },
+    {
+      "id": 12,
+      "firstName": "Jan",
+      "lastName": "Vertonghen",
+      "birthYear": "1987",
+      "image": "players/player_vertonghen.png"
+    },
+    {
+      "id": 13,
+      "firstName": "Thibaut",
+      "lastName": "Courtois",
+      "birthYear": "1992",
+      "image": "players/player_courtois.png"
+    },
+    {
+      "id": 14,
+      "firstName": "Simon",
+      "lastName": "Mignolet",
+      "birthYear": "1988",
+      "image": "players/player_mignolet.png"
+    },
+    {
+      "id": 15,
+      "firstName": "Steven",
+      "lastName": "Defour",
+      "birthYear": "1988",
+      "image": "players/player_defour.png"
+    },
+    {
+      "id": 16,
+      "firstName": "Kevin",
+      "lastName": "Mirallas",
+      "birthYear": "1987",
+      "image": "players/player_mirallas.png"
+    }
+  ]
+}

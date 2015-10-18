@@ -1,4 +1,4 @@
-# recap
+# short recap
 
 # questions?
 
@@ -6,5 +6,7 @@
 
 # design patterns
 
-# exercise 1
+# exercise 1: evaluate the plain javascript/html/css way
+
+ctd: the angular non component way, the extJs way
 

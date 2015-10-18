@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Devils Team Selection</title>
+    <link rel=stylesheet type="text/css" href="../css/team.css">
+</head>
+<body>
+    <h1>Red Devils Team Selection</h1>
+    <div id="root">
+        <div id="errors"></div>
+        <div id="all">
+            <span><h1>All Players</h1></span>
+        </div>
+        <div id="allPlayers">
+        </div>
+        <div id="selected">
+            <span><h1>Selected Players</h1></span>
+        </div>
+        <div id="selectedPlayers">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var players;
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = fetchPlayers;
+        xhr.open("GET", "/data/players.json", true);
+        xhr.send();
+
+        function togglePlayerSelection(index){
+            if(players){
+                var allPlayers = document.getElementById("allPlayers");
+                var thePlayer = document.getElementById("player"+index);
+                var selectedPlayers = document.getElementById("selectedPlayers");
+
+                if(players[index].selected === false){
+                    var numberOfSelectedPlayers = _.filter(players, function(player){return player.selected === true;}).length;
+                    if(numberOfSelectedPlayers >= 11){
+                        setError('Selection can have at most 11 players');
+                        return;
+                    }
+                    var theSelectedPlayer = allPlayers.removeChild(thePlayer);
+                    selectedPlayers.appendChild(theSelectedPlayer);
+                }else{
+                    var theUnselectedPlayer = selectedPlayers.removeChild(thePlayer);
+                    allPlayers.appendChild(theUnselectedPlayer);
+                }
+                players[index].selected = !players[index].selected;
+                setError();
+            }
+        }
+
+        function fetchPlayers()
+        {
+            if (xhr.readyState == 4) {
+                if(xhr.status !== 200){
+                    setError('Unable to load players');
+                }else {
+                    players = JSON.parse(xhr.responseText).players;
+                    for (var index = 0; index < players.length; index++) {
+                        var img = document.createElement('img');
+                        img.setAttribute("src", "../images/" + players[index].image);
+                        img.setAttribute("onclick", "togglePlayerSelection(" + index + ")");
+                        var div = document.createElement('div');
+                        var divText = document.createTextNode(players[index].firstName + ' ' + players[index].lastName);
+                        div.appendChild(divText);
+
+                        var divPlayer = document.createElement('div');
+                        divPlayer.setAttribute("id", 'player' + index);
+                        divPlayer.appendChild(img);
+                        divPlayer.appendChild(div);
+
+                        document.getElementById("allPlayers").appendChild(divPlayer);
+
+                        players[index].selected = false;
+                    }
+                    setError();
+                }
+            }
+        }
+
+        function setError(newError){
+            var errors = document.getElementById("errors");
+            if(newError){
+                errors.innerHTML = newError;
+                errors.visibility = 'visible';
+                errors.style.backgroundColor = 'white';
+            }else {
+                errors.innerHTML = '';
+                errors.visibility = 'hidden';
+                errors.style.backgroundColor = '';
+            }
+        }
+    </script>
+
+    <script src="../node_modules/lodash/index.js" />
+</body>
+</html>

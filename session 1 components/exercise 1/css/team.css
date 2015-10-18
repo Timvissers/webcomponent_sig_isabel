@@ -1,0 +1,37 @@
+html, body {
+    background-image: url("../images/gras-texture.jpg");
+    color: white;
+}
+
+h1{
+    text-align: center;
+    background-color: black;
+}
+
+div[id*="player"] > div{
+    background-color: black;
+    text-align: center;
+}
+
+div[id*="player"] {
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+div[id*="player"] > img {
+    display: block;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#allPlayers {
+    display: inline-block;
+}
+
+#errors {
+    min-height: 20px;
+    color: red;
+    text-align: center;
+}

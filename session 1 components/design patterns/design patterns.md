@@ -44,16 +44,16 @@ to know about the other components and facilitate communication between them. Li
 
 # IoC (dependency injection)
 
-TODO
+Only load the dependencies that you know you need. Referential transparancy: higher maintainability and testability
 
 # Component: no application or page level dependencies
 
-TODO
+...
 
 # Module pattern
 
-TODO
+Encapsulation of code
 
 # Promises
 
-TODO
+Support for handling asynchronous events. Without an explosion of callbacks. Before in every library, now in ES6
