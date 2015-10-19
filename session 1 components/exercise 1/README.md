@@ -3,6 +3,7 @@
 - using only html, css and plain javascript,
 - using angular 1.x as done in the beginning
 - using extJs?
+- using polymer (for the early adopters) ;)
 
 Evaluate them
 
