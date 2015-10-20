@@ -18,173 +18,18 @@ Self containing
 * think of reusability when writing similar code again and again
 * configurable components
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Portable
 
+* over different browsers (based on spec)
+* ~reusable, but in different use cases
 * configurable components
 * clear (and possibly documented) APIs
-* pojo
 * IoC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Consumable
 
 - available?
 - usable?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Consistent
 
@@ -198,118 +43,15 @@ Self containing
 * coding style
 * standardized
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Maintainable
 
 * readable and understandable code
-* keep it simple
+* maintain backwards compatibility if possible
+* avoid duplication
+* keep it simple (kiss), low complexity
 * well tested, tests are documentation
 * no mix of languages, eg excessive json in html, keep javascript out of html
 * intuitive
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Encapsulated
 
@@ -317,181 +59,20 @@ Self containing
 * only interact via API, not use the internals
 * keep look and feel (eg facebook like components)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Loosely coupled
 
 - IoC
-- decoupled communication
+- decoupled communication (mediator)
 - html id's used in javascript (ok for components)
 - modular
 - few knowledge about other components, APIs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- no mix of languages, eg excessive json in html, keep javascript out of html
 
 ## Quick to implement
 
 * understandable
 * well documented (in any way)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Self containing
 
 * reusable without the need to include other components for reuse
-
-
