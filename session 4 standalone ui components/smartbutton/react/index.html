@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First React Example</title>
+</head>
+<body>
+<div id="smart-button-id"></div>
+<script src="build/react.js"></script>
+<script src="build/JSXTransformer.js"></script>
+<script type="text/jsx">
+    var SmartButton = React.createClass({
+        render: function() {
+            return (
+                    <a>default text</a>
+            )
+        }
+    });
+    React.render(
+            <SmartButton/>,
+            document.getElementById('smart-button-id')
+    );
+</script>
+</body>
+</html>
