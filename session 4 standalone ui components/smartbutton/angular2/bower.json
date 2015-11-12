@@ -1,0 +1,7 @@
+{
+  "name": "smartbutton-angular2",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

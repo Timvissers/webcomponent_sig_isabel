@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Reusable Smart Button Component</title>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script>
+        System.config({
+            packages: {'app': {defaultExtension: 'js'}}
+        });
+        System.import('app/SmartButton');
+    </script>
+</head>
+<body>
+<div class="jumbotron">
+    <h1>Smart Buttons!</h1>
+    <p><!-- static markup version -->
+        <a class="btn btn-default">Dumb Button</a>
+    </p>
+
+    <smart-button defaulttext="smart text"></smart-button>
+
+</div>
+</body>
+</html>

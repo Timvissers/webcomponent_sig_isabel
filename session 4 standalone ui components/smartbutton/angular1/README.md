@@ -15,6 +15,10 @@ to run unit tests
 
 	grunt karma
 	
+## inner working
+
+TODO
+	
 ## component level
 
 TODO

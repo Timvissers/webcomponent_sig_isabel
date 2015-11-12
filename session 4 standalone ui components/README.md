@@ -9,7 +9,7 @@ based on chapter 5 of the book
 ## features
 
 ### States
-- configuragle temporary state text (default)
+- configurable temporary state text (default)
 - configurable active state text (after click)
 - fixed finished text (after timeout)
 
@@ -20,4 +20,43 @@ based on chapter 5 of the book
 ### Transclusion HTML fragment
 
 by css selector priority
+
+
+
+
+
+
+# existing directives
+
+## errorcontainer
+
+TODO
+
+## confirmation model
+
+TODO
+
+## conditional focus
+
+TODO
+
+## emailvalidator
+
+TODO
+
+## http loading
+
+TODO
+
+## phone number
+
+TODO
+
+## block on exit
+
+TODO
+
+## preview thumbnail
+
+TODO 
 
