@@ -1,4 +1,4 @@
-# Smartbutton using angular 2
+# Smartbutton using react
 
 ## how to run
 
