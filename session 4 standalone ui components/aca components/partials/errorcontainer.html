@@ -1,0 +1,21 @@
+<div id="header-error-container" ng-show="errorContainer.errorCode()">
+    <div id="header-error-affix">
+        <div id="header-error">
+            <div ng-switch on="errorContainer.errorTemplate() != null">
+                <div ng-switch-when="true">
+                    <div ng-include="errorContainer.errorTemplate()"></div>
+                </div>
+                <div ng-switch-default class="alert alert-danger" role="alert">
+                    <i class="fa fa-exclamation-circle"></i> {{errorContainer.errorCode()}}
+                    <ul>
+                        <li ng-repeat="errorDetail in errorContainer.getChildren() | limitTo : errorContainer.getNrOfErrorsToDisplay()">{{errorDetail}}</li>
+                    </ul>
+                    <div id="errorContainerActions" ng-show="errorContainer.getChildren().length > 1">
+                        <a role="button" class="btn btn-link btn-sm" ng-show="errorContainer.isCollapsed() && errorContainer.getChildren().length > errorContainer.getNrOfErrorsToDisplay()" ng-click="errorContainer.toggleExpansion()">Show more</a>
+                        <a role="button" class="btn btn-link btn-sm" ng-show="errorContainer.isExpanded()" ng-click="errorContainer.toggleExpansion()">Show less</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

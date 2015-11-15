@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="sig_errorcontainer">
+<head>
+    <title>sig_errorcontainer</title>
+    <link href="./aca%20code/css/bootstrap.css" rel="stylesheet">
+    <script src="./aca%20code/lib/angular/angular.js"></script>
+    <script src="./aca%20code/lib/angular/angular-resource.js"></script>
+    <script src="./aca%20code/lib/angular/angular-route.js"></script>
+</head>
+<body>
+<div class="jumbotron" ng-controller="SigErrorcontainerController">
+
+    <input type="button" ng-click="setErrorCode()" value="Set an error"/>
+    <input type="button" ng-click="clearErrorCode()" value="Clear the error"/>
+
+    <errorcontainer/>
+
+</div>
+<script src="./aca%20code/js/be.aca.ui.error.container.model.js"></script>
+<script src="./aca%20code/js/be.aca.ui.error.container.ui.js"></script>
+<script src="./aca%20code/js/be.aca.ui.i18n.js"></script>
+<script src="./aca%20code/js/be.aca.ui.locale.js"></script>
+<script src="./aca%20code/js/be.aca.ui.usercontext.js"></script>
+<script src="./aca%20code/js/be.aca.ui.usercontextcache.js"></script>
+<script src="./aca%20code/js/be.aca.ui.scroll.js"></script>
+<script src="./sig_errorcontainer.js"></script>
+</body>
+</html>
