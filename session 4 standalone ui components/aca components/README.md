@@ -20,9 +20,13 @@ and to start your server
 ## errorcontainer
 
 It displays an error code that can be set or cleared via a service
-TODO
 
-## confirmation model
+- api of this directive is implicit (setting the error code must be done via a singleton service)
+- Styling is in a project specific template partial
+- Developers only need to interact with the errorcontainer service (and place the directive in the html)
+- Reusable, but only 1 component per page (service is a singleton)
+
+## confirmation modal
 
 TODO
 
@@ -32,19 +36,21 @@ TODO
 
 ## emailvalidator
 
-TODO
+Not really a component, just additional behaviour to a component
 
 ## http loading
+
+- cfr errorcontainer. One singleton, only one use case.
 
 TODO
 
 ## phone number
 
-TODO
+- component with validation
 
 ## block on exit
 
-TODO
+- cfr errorcontainer. 
 
 ## preview thumbnail
 
